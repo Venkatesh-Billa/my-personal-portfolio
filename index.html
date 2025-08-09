@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-FaJmJX+0gZbFQwH7jvRrZPa2HRyc5kE8lbRJQK6n6Zox5lQb7td3SeL1QZyPKVmrMwT9FY+0eJmDk/96pm2eRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Sidebar Navbar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="images/IMG_5200.JPG" alt="Profile Picture" />
+      <h2>Billa Venkatesh</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p id="typing-text"></p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>MongoDB</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Flutter</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/images.png" alt="Voting System Project" />
+          <div class="project-info">
+            <h3>Online Voting System</h3>
+            <p>Secure voting system with face verification using AI.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/download.jpeg" alt="Weather App Project" />
+          <div class="project-info">
+            <h3>Real-Time Weather App</h3>
+            <p>Weather updates using API integration with live location detection.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/ai.jpeg" alt="AI Heath-Care System" />
+          <div class="project-info">
+            <h3>AI Health-Care System</h3>
+            <p>Health Updates and Alerts using sensors</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/sms.avif" alt="Student Management System" />
+          <div class="project-info">
+            <h3>Student Management System</h3>
+            <p>Student details updation using python</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <input type="email" name="from_email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+
+    <footer>
+      <p>© 2025 Billa Venkatesh. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <!-- EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
